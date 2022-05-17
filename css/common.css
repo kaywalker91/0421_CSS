@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.main{
+    float: left;
+    width: 25%;
+}
+
+
+.main>a {
+    color: white;
+    background-color: #0066CC;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.main>a:hover{
+    font-weight: bold;
+    color: yellow;
+}
+
+.sub {
+    background-color: #55AAFF;
+    display: none;
+}
+
+.sub a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+/* 마우스를 올린 .main의 자식 .sub */
+.main:hover>.sub{
+    display: block;
+}
+
+p[title$="안녕"]{
+    color: aqua;
+}
